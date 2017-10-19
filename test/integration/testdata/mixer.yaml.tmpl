@@ -1,0 +1,40 @@
+# Mixer
+apiVersion: v1
+kind: Service
+metadata:
+  name: istio-mixer
+  labels:
+    app: mixer
+spec:
+  ports:
+  - name: grpc
+    port: 9091
+  selector:
+    app: mixer
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: istio-mixer-service-account
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    sidecar.istio.io/inject: "false"
+  name: istio-mixer
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: mixer
+    spec:
+      serviceAccountName: istio-mixer-service-account
+      containers:
+      - name: mixer
+        image: {{.Hub}}/testmixer:{{.Tag}}
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 9091
+---
