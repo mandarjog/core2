@@ -26,12 +26,12 @@ import (
 	"github.com/spf13/cobra"
 
 	proxyconfig "istio.io/api/proxy/v1/config"
-	"istio.io/pilot/cmd"
-	"istio.io/pilot/model"
-	"istio.io/pilot/platform"
-	"istio.io/pilot/proxy"
-	"istio.io/pilot/proxy/envoy"
-	"istio.io/pilot/tools/version"
+	"istio.io/core/cmd"
+	"istio.io/core/model"
+	"istio.io/core/platform"
+	"istio.io/core/proxy"
+	"istio.io/core/proxy/envoy"
+	"istio.io/core/tools/version"
 )
 
 var (

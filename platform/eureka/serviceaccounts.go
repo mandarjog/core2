@@ -14,7 +14,7 @@
 
 package eureka
 
-import "istio.io/pilot/model"
+import "istio.io/core/model"
 
 type serviceAccounts struct {
 }

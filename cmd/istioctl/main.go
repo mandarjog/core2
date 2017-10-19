@@ -36,11 +36,11 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 	clientcmdapi "k8s.io/client-go/tools/clientcmd/api"
 
-	"istio.io/pilot/adapter/config/crd"
-	"istio.io/pilot/cmd"
-	"istio.io/pilot/model"
-	"istio.io/pilot/platform/kube"
-	"istio.io/pilot/tools/version"
+	"istio.io/core/adapter/config/crd"
+	"istio.io/core/cmd"
+	"istio.io/core/model"
+	"istio.io/core/platform/kube"
+	"istio.io/core/tools/version"
 )
 
 const (

@@ -22,10 +22,10 @@ import (
 	"github.com/spf13/cobra"
 	"k8s.io/api/core/v1"
 
-	"istio.io/pilot/cmd"
-	"istio.io/pilot/platform/kube"
-	"istio.io/pilot/platform/kube/inject"
-	"istio.io/pilot/tools/version"
+	"istio.io/core/cmd"
+	"istio.io/core/platform/kube"
+	"istio.io/core/platform/kube/inject"
+	"istio.io/core/tools/version"
 )
 
 func getRootCmd() *cobra.Command {

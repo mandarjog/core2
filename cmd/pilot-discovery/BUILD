@@ -32,6 +32,6 @@ go_library(
 go_binary(
     name = "pilot-discovery",
     library = ":go_default_library",
-    linkstamp = "istio.io/pilot/tools/version",
+    linkstamp = "istio.io/core/tools/version",
     visibility = ["//visibility:public"],
 )

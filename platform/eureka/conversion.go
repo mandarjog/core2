@@ -20,7 +20,7 @@ import (
 
 	"github.com/golang/glog"
 
-	"istio.io/pilot/model"
+	"istio.io/core/model"
 )
 
 // Convert Eureka applications to services. If provided, only convert applications in the hostnames whitelist,

@@ -30,8 +30,8 @@ import (
 	"k8s.io/client-go/tools/cache"
 
 	proxyconfig "istio.io/api/proxy/v1/config"
-	"istio.io/pilot/model"
-	"istio.io/pilot/platform/kube"
+	"istio.io/core/model"
+	"istio.io/core/platform/kube"
 )
 
 type controller struct {

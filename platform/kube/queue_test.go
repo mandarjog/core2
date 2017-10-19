@@ -19,7 +19,7 @@ import (
 	"testing"
 	"time"
 
-	"istio.io/pilot/model"
+	"istio.io/core/model"
 )
 
 func TestQueue(t *testing.T) {

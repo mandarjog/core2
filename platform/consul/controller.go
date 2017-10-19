@@ -20,7 +20,7 @@ import (
 	"github.com/golang/glog"
 	"github.com/hashicorp/consul/api"
 
-	"istio.io/pilot/model"
+	"istio.io/core/model"
 )
 
 // Controller communicates with Consul and monitors for changes

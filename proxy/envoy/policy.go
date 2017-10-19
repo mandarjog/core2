@@ -19,8 +19,8 @@ package envoy
 
 import (
 	proxyconfig "istio.io/api/proxy/v1/config"
-	"istio.io/pilot/model"
-	"istio.io/pilot/proxy"
+	"istio.io/core/model"
+	"istio.io/core/proxy"
 )
 
 // applyClusterPolicy assumes an outbound cluster and inserts custom configuration for the cluster

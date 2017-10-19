@@ -28,8 +28,8 @@ import (
 	"github.com/golang/glog"
 	multierror "github.com/hashicorp/go-multierror"
 
-	"istio.io/pilot/model"
-	"istio.io/pilot/proxy"
+	"istio.io/core/model"
+	"istio.io/core/proxy"
 )
 
 // DiscoveryService publishes services, clusters, and routes for all proxies

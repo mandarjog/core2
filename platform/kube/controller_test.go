@@ -29,8 +29,8 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/kubernetes/fake"
 
-	"istio.io/pilot/model"
-	"istio.io/pilot/test/util"
+	"istio.io/core/model"
+	"istio.io/core/test/util"
 )
 
 func makeClient(t *testing.T) kubernetes.Interface {

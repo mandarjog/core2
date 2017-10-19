@@ -21,8 +21,8 @@ import (
 	"github.com/golang/glog"
 
 	proxyconfig "istio.io/api/proxy/v1/config"
-	"istio.io/pilot/model"
-	"istio.io/pilot/proxy"
+	"istio.io/core/model"
+	"istio.io/core/proxy"
 )
 
 func buildEgressListeners(mesh *proxyconfig.MeshConfig, egress proxy.Node) Listeners {

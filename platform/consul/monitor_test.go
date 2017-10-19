@@ -21,7 +21,7 @@ import (
 
 	"github.com/hashicorp/consul/api"
 
-	"istio.io/pilot/model"
+	"istio.io/core/model"
 )
 
 const (

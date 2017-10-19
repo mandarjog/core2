@@ -17,9 +17,9 @@ package memory_test
 import (
 	"testing"
 
-	"istio.io/pilot/adapter/config/memory"
-	"istio.io/pilot/model"
-	"istio.io/pilot/test/mock"
+	"istio.io/core/adapter/config/memory"
+	"istio.io/core/model"
+	"istio.io/core/test/mock"
 )
 
 func TestStoreInvariant(t *testing.T) {

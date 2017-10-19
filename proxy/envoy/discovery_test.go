@@ -24,11 +24,11 @@ import (
 	restful "github.com/emicklei/go-restful"
 
 	proxyconfig "istio.io/api/proxy/v1/config"
-	"istio.io/pilot/adapter/config/memory"
-	"istio.io/pilot/model"
-	"istio.io/pilot/proxy"
-	"istio.io/pilot/test/mock"
-	"istio.io/pilot/test/util"
+	"istio.io/core/adapter/config/memory"
+	"istio.io/core/model"
+	"istio.io/core/proxy"
+	"istio.io/core/test/mock"
+	"istio.io/core/test/util"
 )
 
 // Implement minimal methods to satisfy model.Controller interface for

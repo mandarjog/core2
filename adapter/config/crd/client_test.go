@@ -19,10 +19,10 @@ import (
 	"os/user"
 	"testing"
 
-	"istio.io/pilot/model"
-	"istio.io/pilot/platform/kube"
-	"istio.io/pilot/test/mock"
-	"istio.io/pilot/test/util"
+	"istio.io/core/model"
+	"istio.io/core/platform/kube"
+	"istio.io/core/test/mock"
+	"istio.io/core/test/util"
 )
 
 func kubeconfig(t *testing.T) string {

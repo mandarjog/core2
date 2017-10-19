@@ -41,8 +41,8 @@ import (
 	"k8s.io/client-go/kubernetes"
 
 	proxyconfig "istio.io/api/proxy/v1/config"
-	"istio.io/pilot/proxy"
-	"istio.io/pilot/tools/version"
+	"istio.io/core/proxy"
+	"istio.io/core/tools/version"
 )
 
 // per-sidecar policy and status (deployment, job, statefulset, pod, etc)

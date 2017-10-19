@@ -19,7 +19,7 @@ import (
 	"testing"
 	"time"
 
-	"istio.io/pilot/model"
+	"istio.io/core/model"
 )
 
 const (

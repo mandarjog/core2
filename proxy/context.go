@@ -25,7 +25,7 @@ import (
 	multierror "github.com/hashicorp/go-multierror"
 
 	proxyconfig "istio.io/api/proxy/v1/config"
-	"istio.io/pilot/model"
+	"istio.io/core/model"
 )
 
 // Environment provides an aggregate environmental API for Pilot

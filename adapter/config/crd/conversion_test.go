@@ -18,8 +18,8 @@ import (
 	"reflect"
 	"testing"
 
-	"istio.io/pilot/model"
-	"istio.io/pilot/test/mock"
+	"istio.io/core/model"
+	"istio.io/core/test/mock"
 )
 
 var (

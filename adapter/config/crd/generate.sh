@@ -38,7 +38,7 @@ import (
 	meta_v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 
-	"istio.io/pilot/model"
+	"istio.io/core/model"
 )
 
 var knownTypes = map[string]struct {

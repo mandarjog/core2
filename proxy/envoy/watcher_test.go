@@ -27,7 +27,7 @@ import (
 
 	"github.com/howeyc/fsnotify"
 
-	"istio.io/pilot/proxy"
+	"istio.io/core/proxy"
 )
 
 type TestAgent struct {

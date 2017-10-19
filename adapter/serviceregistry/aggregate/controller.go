@@ -17,8 +17,8 @@ package aggregate
 import (
 	"github.com/golang/glog"
 
-	"istio.io/pilot/model"
-	"istio.io/pilot/platform"
+	"istio.io/core/model"
+	"istio.io/core/platform"
 )
 
 // Registry specifies the collection of service registry related interfaces
