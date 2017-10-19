@@ -11,7 +11,6 @@ go_library(
     ],
     visibility = ["//visibility:public"],
     deps = [
-        "//model/test:go_default_library",
         "@com_github_ghodss_yaml//:go_default_library",
         "@com_github_golang_protobuf//jsonpb:go_default_library",
         "@com_github_golang_protobuf//proto:go_default_library",
@@ -19,7 +18,8 @@ go_library(
         "@com_github_golang_protobuf//ptypes/duration:go_default_library",
         "@com_github_hashicorp_go_multierror//:go_default_library",
         "@in_gopkg_yaml_v2//:go_default_library",
-        "@io_istio_api//:go_default_library",
+        "@io_istio_api//:proxy/v1/config",
+        "@io_istio_core//model/test:go_default_library",
     ],
 )
 
@@ -32,12 +32,12 @@ go_test(
     ],
     library = ":go_default_library",
     deps = [
-        "//model/test:go_default_library",
         "@com_github_golang_protobuf//proto:go_default_library",
         "@com_github_golang_protobuf//ptypes:go_default_library",
         "@com_github_golang_protobuf//ptypes/duration:go_default_library",
         "@com_github_hashicorp_go_multierror//:go_default_library",
-        "@io_istio_api//:go_default_library",
+        "@io_istio_api//:proxy/v1/config",
+        "@io_istio_core//model/test:go_default_library",
     ],
 )
 
@@ -49,10 +49,10 @@ go_test(
         "conversion_test.go",
     ],
     deps = [
-        ":go_default_library",
-        "//adapter/config/memory:go_default_library",
-        "//test/mock:go_default_library",
         "@com_github_davecgh_go_spew//spew:go_default_library",
-        "@io_istio_api//:go_default_library",
+        "@io_istio_api//:proxy/v1/config",
+        "@io_istio_core//adapter/config/memory:go_default_library",
+        "@io_istio_core//model:go_default_library",
+        "@io_istio_core//test/mock:go_default_library",
     ],
 )

@@ -33,7 +33,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 
-	pb "istio.io/core/pilot/test/grpcecho"
+	pb "istio.io/core/test/grpcecho"
 )
 
 var (

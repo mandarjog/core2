@@ -44,7 +44,7 @@ import (
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/metadata"
 
-	pb "istio.io/core/pilot/test/grpcecho"
+	pb "istio.io/core/test/grpcecho"
 )
 
 var (

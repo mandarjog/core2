@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"net"
 
-	"istio.io/core/pilot/model"
-	"istio.io/core/pilot/proxy"
+	"istio.io/core/model"
+	"istio.io/core/proxy"
 )
 
 // Mock values

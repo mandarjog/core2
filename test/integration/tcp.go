@@ -18,7 +18,7 @@ import (
 	"fmt"
 
 	proxyconfig "istio.io/api/proxy/v1/config"
-	"istio.io/core/pilot/platform"
+	"istio.io/core/platform"
 )
 
 type tcp struct {
