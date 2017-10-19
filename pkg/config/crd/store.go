@@ -28,7 +28,7 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/cache"
 
-	"istio.io/mixer/pkg/config/store"
+	"istio.io/core/pkg/config/store"
 )
 
 const (

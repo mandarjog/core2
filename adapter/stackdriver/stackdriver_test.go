@@ -18,11 +18,11 @@ import (
 	"context"
 	"testing"
 
-	"istio.io/mixer/adapter/stackdriver/config"
-	"istio.io/mixer/pkg/adapter"
-	"istio.io/mixer/pkg/adapter/test"
-	"istio.io/mixer/template/logentry"
-	"istio.io/mixer/template/metric"
+	"istio.io/core/adapter/stackdriver/config"
+	"istio.io/core/pkg/adapter"
+	"istio.io/core/pkg/adapter/test"
+	"istio.io/core/template/logentry"
+	"istio.io/core/template/metric"
 )
 
 type (

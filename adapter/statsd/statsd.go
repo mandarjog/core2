@@ -24,10 +24,10 @@ import (
 	"github.com/cactus/go-statsd-client/statsd"
 	multierror "github.com/hashicorp/go-multierror"
 
-	"istio.io/mixer/adapter/statsd/config"
-	"istio.io/mixer/pkg/adapter"
-	"istio.io/mixer/pkg/pool"
-	"istio.io/mixer/template/metric"
+	"istio.io/core/adapter/statsd/config"
+	"istio.io/core/pkg/adapter"
+	"istio.io/core/pkg/pool"
+	"istio.io/core/template/metric"
 )
 
 const (
@@ -112,7 +112,7 @@ func (h *handler) Close() error { return h.client.Close() }
 func GetInfo() adapter.Info {
 	return adapter.Info{
 		Name:        "statsd",
-		Impl:        "istio.io/mixer/adapter/statsd",
+		Impl:        "istio.io/core/adapter/statsd",
 		Description: "Produces statsd metrics",
 		SupportedTemplates: []string{
 			metric.TemplateName,

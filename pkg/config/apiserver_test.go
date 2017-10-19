@@ -28,10 +28,10 @@ import (
 
 	rpc "github.com/googleapis/googleapis/google/rpc"
 
-	"istio.io/mixer/pkg/adapter"
-	"istio.io/mixer/pkg/config/descriptor"
-	pb "istio.io/mixer/pkg/config/proto"
-	"istio.io/mixer/pkg/template"
+	"istio.io/core/pkg/adapter"
+	"istio.io/core/pkg/config/descriptor"
+	pb "istio.io/core/pkg/config/proto"
+	"istio.io/core/pkg/template"
 )
 
 func makeAPIRequest(handler http.Handler, method, url string, data []byte, t *testing.T) (int, []byte) {

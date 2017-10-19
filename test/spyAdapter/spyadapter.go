@@ -21,8 +21,8 @@ import (
 
 	"github.com/gogo/protobuf/types"
 
-	"istio.io/mixer/pkg/adapter"
-	reportTmpl "istio.io/mixer/test/template/report"
+	"istio.io/core/pkg/adapter"
+	reportTmpl "istio.io/core/test/template/report"
 )
 
 type (

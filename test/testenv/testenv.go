@@ -7,11 +7,11 @@ import (
 	"google.golang.org/grpc"
 
 	mixerpb "istio.io/api/mixer/v1"
-	"istio.io/mixer/cmd/server/cmd"
-	"istio.io/mixer/cmd/shared"
-	"istio.io/mixer/pkg/adapter"
-	"istio.io/mixer/pkg/attribute"
-	"istio.io/mixer/pkg/template"
+	"istio.io/core/cmd/server/cmd"
+	"istio.io/core/cmd/shared"
+	"istio.io/core/pkg/adapter"
+	"istio.io/core/pkg/attribute"
+	"istio.io/core/pkg/template"
 )
 
 // TestEnv interface

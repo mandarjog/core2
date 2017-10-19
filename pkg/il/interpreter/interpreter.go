@@ -32,8 +32,8 @@ package interpreter
 import (
 	"fmt"
 
-	"istio.io/mixer/pkg/attribute"
-	"istio.io/mixer/pkg/il"
+	"istio.io/core/pkg/attribute"
+	"istio.io/core/pkg/il"
 )
 
 const (

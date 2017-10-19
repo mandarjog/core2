@@ -25,11 +25,11 @@ import (
 	"google.golang.org/grpc"
 
 	mixerpb "istio.io/api/mixer/v1"
-	"istio.io/mixer/pkg/adapter"
-	"istio.io/mixer/pkg/aspect"
-	"istio.io/mixer/pkg/attribute"
-	"istio.io/mixer/pkg/pool"
-	"istio.io/mixer/pkg/status"
+	"istio.io/core/pkg/adapter"
+	"istio.io/core/pkg/aspect"
+	"istio.io/core/pkg/attribute"
+	"istio.io/core/pkg/pool"
+	"istio.io/core/pkg/status"
 )
 
 type benchState struct {

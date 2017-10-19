@@ -21,14 +21,14 @@ import (
 	rpc "github.com/googleapis/googleapis/google/rpc"
 
 	dpb "istio.io/api/mixer/v1/config/descriptor"
-	"istio.io/mixer/pkg/adapter"
-	aconfig "istio.io/mixer/pkg/aspect/config"
-	"istio.io/mixer/pkg/attribute"
-	"istio.io/mixer/pkg/config"
-	"istio.io/mixer/pkg/config/descriptor"
-	cpb "istio.io/mixer/pkg/config/proto"
-	"istio.io/mixer/pkg/expr"
-	"istio.io/mixer/pkg/status"
+	"istio.io/core/pkg/adapter"
+	aconfig "istio.io/core/pkg/aspect/config"
+	"istio.io/core/pkg/attribute"
+	"istio.io/core/pkg/config"
+	"istio.io/core/pkg/config/descriptor"
+	cpb "istio.io/core/pkg/config/proto"
+	"istio.io/core/pkg/expr"
+	"istio.io/core/pkg/status"
 )
 
 type (

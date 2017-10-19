@@ -14,7 +14,7 @@
 
 package test
 
-import "istio.io/mixer/pkg/adapter"
+import "istio.io/core/pkg/adapter"
 
 // Env provides a test environment.
 type Env struct {

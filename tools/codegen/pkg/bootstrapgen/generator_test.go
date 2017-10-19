@@ -40,10 +40,10 @@ func TestGenerator_Generate(t *testing.T) {
 		want     string
 	}{
 		{"AllTemplates", map[string]string{
-			"testdata/check_proto.descriptor_set":   "istio.io/mixer/template/list",
-			"testdata/report2_proto.descriptor_set": "istio.io/mixer/template/metric",
-			"testdata/quota_proto.descriptor_set":   "istio.io/mixer/template/quota",
-			"testdata/report1_proto.descriptor_set": "istio.io/mixer/template/log"},
+			"testdata/check_proto.descriptor_set":   "istio.io/core/template/list",
+			"testdata/report2_proto.descriptor_set": "istio.io/core/template/metric",
+			"testdata/quota_proto.descriptor_set":   "istio.io/core/template/quota",
+			"testdata/report1_proto.descriptor_set": "istio.io/core/template/log"},
 			"testdata/AllTemplates.go.golden"},
 	}
 	for _, v := range tests {

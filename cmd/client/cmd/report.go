@@ -22,7 +22,7 @@ import (
 	"github.com/spf13/cobra"
 
 	mixerpb "istio.io/api/mixer/v1"
-	"istio.io/mixer/cmd/shared"
+	"istio.io/core/cmd/shared"
 )
 
 func reportCmd(rootArgs *rootArgs, printf, fatalf shared.FormatFn) *cobra.Command {

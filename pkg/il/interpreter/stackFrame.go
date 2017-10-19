@@ -14,7 +14,7 @@
 
 package interpreter
 
-import "istio.io/mixer/pkg/il"
+import "istio.io/core/pkg/il"
 
 // stackFrame captures the state of a call-frame during function invocations.
 type stackFrame struct {

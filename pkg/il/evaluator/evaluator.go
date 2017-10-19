@@ -25,12 +25,12 @@ import (
 	lru "github.com/hashicorp/golang-lru"
 
 	pb "istio.io/api/mixer/v1/config/descriptor"
-	"istio.io/mixer/pkg/attribute"
-	"istio.io/mixer/pkg/config"
-	"istio.io/mixer/pkg/config/descriptor"
-	"istio.io/mixer/pkg/expr"
-	"istio.io/mixer/pkg/il/compiler"
-	"istio.io/mixer/pkg/il/interpreter"
+	"istio.io/core/pkg/attribute"
+	"istio.io/core/pkg/config"
+	"istio.io/core/pkg/config/descriptor"
+	"istio.io/core/pkg/expr"
+	"istio.io/core/pkg/il/compiler"
+	"istio.io/core/pkg/il/interpreter"
 )
 
 // IL is an implementation of expr.Evaluator that also exposes specific methods.

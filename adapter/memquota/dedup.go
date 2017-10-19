@@ -18,8 +18,8 @@ import (
 	"sync"
 	"time"
 
-	"istio.io/mixer/pkg/adapter"
-	"istio.io/mixer/template/quota"
+	"istio.io/core/pkg/adapter"
+	"istio.io/core/template/quota"
 )
 
 type (

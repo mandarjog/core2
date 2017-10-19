@@ -32,14 +32,14 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 
 	adptTmpl "istio.io/api/mixer/v1/template"
-	"istio.io/mixer/pkg/adapter"
-	"istio.io/mixer/pkg/aspect"
-	"istio.io/mixer/pkg/attribute"
-	cpb "istio.io/mixer/pkg/config/proto"
-	"istio.io/mixer/pkg/expr"
-	"istio.io/mixer/pkg/pool"
-	"istio.io/mixer/pkg/status"
-	"istio.io/mixer/pkg/template"
+	"istio.io/core/pkg/adapter"
+	"istio.io/core/pkg/aspect"
+	"istio.io/core/pkg/attribute"
+	cpb "istio.io/core/pkg/config/proto"
+	"istio.io/core/pkg/expr"
+	"istio.io/core/pkg/pool"
+	"istio.io/core/pkg/status"
+	"istio.io/core/pkg/template"
 )
 
 // Dispatcher dispatches incoming API calls to configured adapters.

@@ -26,11 +26,11 @@ import (
 	"github.com/golang/protobuf/ptypes/wrappers"
 
 	adptTmpl "istio.io/api/mixer/v1/template"
-	"istio.io/mixer/pkg/adapter"
-	cpb "istio.io/mixer/pkg/config/proto"
-	"istio.io/mixer/pkg/config/store"
-	"istio.io/mixer/pkg/expr"
-	"istio.io/mixer/pkg/template"
+	"istio.io/core/pkg/adapter"
+	cpb "istio.io/core/pkg/config/proto"
+	"istio.io/core/pkg/config/store"
+	"istio.io/core/pkg/expr"
+	"istio.io/core/pkg/template"
 )
 
 type fakedispatcher struct {

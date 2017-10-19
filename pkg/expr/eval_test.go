@@ -21,7 +21,7 @@ import (
 	"strings"
 	"testing"
 
-	"istio.io/mixer/pkg/attribute"
+	"istio.io/core/pkg/attribute"
 )
 
 func TestGoodEval(tt *testing.T) {

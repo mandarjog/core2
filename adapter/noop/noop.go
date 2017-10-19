@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package noop // import "istio.io/mixer/adapter/noop"
+package noop // import "istio.io/core/adapter/noop"
 
 // NOTE: This adapter will eventually be auto-generated so that it automatically supports all templates
 //       known to Mixer. For now, it's manually curated.
@@ -24,13 +24,13 @@ import (
 	"github.com/gogo/protobuf/types"
 	rpc "github.com/googleapis/googleapis/google/rpc"
 
-	"istio.io/mixer/pkg/adapter"
-	"istio.io/mixer/template/checknothing"
-	"istio.io/mixer/template/listentry"
-	"istio.io/mixer/template/logentry"
-	"istio.io/mixer/template/metric"
-	"istio.io/mixer/template/quota"
-	"istio.io/mixer/template/reportnothing"
+	"istio.io/core/pkg/adapter"
+	"istio.io/core/template/checknothing"
+	"istio.io/core/template/listentry"
+	"istio.io/core/template/logentry"
+	"istio.io/core/template/metric"
+	"istio.io/core/template/quota"
+	"istio.io/core/template/reportnothing"
 )
 
 type handler struct{}
@@ -77,7 +77,7 @@ func (*handler) Close() error { return nil }
 func GetInfo() adapter.Info {
 	return adapter.Info{
 		Name:        "noop",
-		Impl:        "istio.io/mixer/adapter/noop",
+		Impl:        "istio.io/core/adapter/noop",
 		Description: "Does nothing (useful for testing)",
 		SupportedTemplates: []string{
 			checknothing.TemplateName,

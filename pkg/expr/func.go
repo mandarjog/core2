@@ -25,7 +25,7 @@ import (
 	multierror "github.com/hashicorp/go-multierror"
 
 	config "istio.io/api/mixer/v1/config/descriptor"
-	"istio.io/mixer/pkg/attribute"
+	"istio.io/core/pkg/attribute"
 )
 
 // FuncBase defines the interface that every expression function must implement.

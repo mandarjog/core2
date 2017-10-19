@@ -17,8 +17,8 @@ package test
 import (
 	"errors"
 
-	"istio.io/mixer/pkg/attribute"
-	"istio.io/mixer/pkg/expr"
+	"istio.io/core/pkg/attribute"
+	"istio.io/core/pkg/expr"
 )
 
 // EvalBody is a function that will be executed when expr.Evaluator.Eval and expr.Evaluator.EvalString are called.

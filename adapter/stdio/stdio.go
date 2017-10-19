@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package stdio // import "istio.io/mixer/adapter/stdio"
+package stdio // import "istio.io/core/adapter/stdio"
 
 import (
 	"context"
@@ -25,10 +25,10 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 
-	"istio.io/mixer/adapter/stdio/config"
-	"istio.io/mixer/pkg/adapter"
-	"istio.io/mixer/template/logentry"
-	"istio.io/mixer/template/metric"
+	"istio.io/core/adapter/stdio/config"
+	"istio.io/core/pkg/adapter"
+	"istio.io/core/template/logentry"
+	"istio.io/core/template/metric"
 )
 
 type (
@@ -128,7 +128,7 @@ func (h *handler) mapSeverityLevel(severity string) zapcore.Level {
 func GetInfo() adapter.Info {
 	return adapter.Info{
 		Name:        "stdio",
-		Impl:        "istio.io/mixer/adapter/stdio",
+		Impl:        "istio.io/core/adapter/stdio",
 		Description: "Writes logs and metrics to a standard I/O stream",
 		SupportedTemplates: []string{
 			logentry.TemplateName,

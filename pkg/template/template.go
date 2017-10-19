@@ -23,9 +23,9 @@ import (
 
 	pb "istio.io/api/mixer/v1/config/descriptor"
 	adptTmpl "istio.io/api/mixer/v1/template"
-	"istio.io/mixer/pkg/adapter"
-	"istio.io/mixer/pkg/attribute"
-	"istio.io/mixer/pkg/expr"
+	"istio.io/core/pkg/adapter"
+	"istio.io/core/pkg/attribute"
+	"istio.io/core/pkg/expr"
 )
 
 type (

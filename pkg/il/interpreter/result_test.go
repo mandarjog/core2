@@ -17,7 +17,7 @@ package interpreter
 import (
 	"testing"
 
-	"istio.io/mixer/pkg/il"
+	"istio.io/core/pkg/il"
 )
 
 func Test_BoolPanics(t *testing.T) {

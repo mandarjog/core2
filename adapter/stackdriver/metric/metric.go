@@ -30,10 +30,10 @@ import (
 	monitoringpb "google.golang.org/genproto/googleapis/monitoring/v3"
 
 	descriptor "istio.io/api/mixer/v1/config/descriptor"
-	"istio.io/mixer/adapter/stackdriver/config"
-	"istio.io/mixer/adapter/stackdriver/helper"
-	"istio.io/mixer/pkg/adapter"
-	"istio.io/mixer/template/metric"
+	"istio.io/core/adapter/stackdriver/config"
+	"istio.io/core/adapter/stackdriver/helper"
+	"istio.io/core/pkg/adapter"
+	"istio.io/core/template/metric"
 )
 
 // TODO: implement adapter validation

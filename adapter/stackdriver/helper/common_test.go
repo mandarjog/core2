@@ -21,7 +21,7 @@ import (
 
 	gapiopts "google.golang.org/api/option"
 
-	"istio.io/mixer/adapter/stackdriver/config"
+	"istio.io/core/adapter/stackdriver/config"
 )
 
 func TestToOpts(t *testing.T) {

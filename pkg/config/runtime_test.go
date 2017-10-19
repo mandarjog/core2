@@ -25,8 +25,8 @@ import (
 
 	multierror "github.com/hashicorp/go-multierror"
 
-	"istio.io/mixer/pkg/attribute"
-	pb "istio.io/mixer/pkg/config/proto"
+	"istio.io/core/pkg/attribute"
+	pb "istio.io/core/pkg/config/proto"
 )
 
 type trueEval struct {

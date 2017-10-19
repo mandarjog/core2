@@ -24,7 +24,7 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	cfg "istio.io/mixer/pkg/config/proto"
+	cfg "istio.io/core/pkg/config/proto"
 )
 
 type testStore struct {

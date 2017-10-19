@@ -12,9 +12,9 @@ import (
 	"golang.org/x/net/context"
 
 	mixerapi "istio.io/api/mixer/v1"
-	"istio.io/mixer/adapter/denier"
-	"istio.io/mixer/pkg/adapter"
-	"istio.io/mixer/template"
+	"istio.io/core/adapter/denier"
+	"istio.io/core/pkg/adapter"
+	"istio.io/core/template"
 )
 
 func closeHelper(c io.Closer) {

@@ -23,11 +23,11 @@ import (
 	"time"
 
 	pbv "istio.io/api/mixer/v1/config/descriptor"
-	"istio.io/mixer/pkg/config/descriptor"
-	pb "istio.io/mixer/pkg/config/proto"
-	"istio.io/mixer/pkg/il/interpreter"
-	iltest "istio.io/mixer/pkg/il/testing"
-	"istio.io/mixer/pkg/il/text"
+	"istio.io/core/pkg/config/descriptor"
+	pb "istio.io/core/pkg/config/proto"
+	"istio.io/core/pkg/il/interpreter"
+	iltest "istio.io/core/pkg/il/testing"
+	"istio.io/core/pkg/il/text"
 )
 
 type testInfo struct {

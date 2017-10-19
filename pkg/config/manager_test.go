@@ -22,10 +22,10 @@ import (
 	"testing"
 	"time"
 
-	"istio.io/mixer/pkg/adapter"
-	"istio.io/mixer/pkg/config/descriptor"
-	"istio.io/mixer/pkg/config/store"
-	"istio.io/mixer/pkg/template"
+	"istio.io/core/pkg/adapter"
+	"istio.io/core/pkg/config/descriptor"
+	"istio.io/core/pkg/config/store"
+	"istio.io/core/pkg/template"
 )
 
 const (

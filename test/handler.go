@@ -20,8 +20,8 @@ import (
 	rpc "github.com/googleapis/googleapis/google/rpc"
 
 	mixerpb "istio.io/api/mixer/v1"
-	"istio.io/mixer/pkg/attribute"
-	"istio.io/mixer/pkg/status"
+	"istio.io/core/pkg/attribute"
+	"istio.io/core/pkg/status"
 )
 
 // AttributesHandler provides an interface for building custom testing behavior.

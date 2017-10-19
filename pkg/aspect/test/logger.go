@@ -18,8 +18,8 @@ package test
 import (
 	"errors"
 
-	"istio.io/mixer/pkg/adapter"
-	"istio.io/mixer/pkg/config"
+	"istio.io/core/pkg/adapter"
+	"istio.io/core/pkg/config"
 )
 
 // Logger is a test struct that implements the application-logs and access-logs aspects.

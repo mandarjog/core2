@@ -28,9 +28,9 @@ import (
 	"github.com/golang/glog"
 
 	dpb "istio.io/api/mixer/v1/config/descriptor"
-	"istio.io/mixer/pkg/adapter"
-	pb "istio.io/mixer/pkg/config/proto"
-	"istio.io/mixer/pkg/expr"
+	"istio.io/core/pkg/adapter"
+	pb "istio.io/core/pkg/config/proto"
+	"istio.io/core/pkg/expr"
 )
 
 // Finder describes anything that can provide a view into the config's descriptors by name and type.

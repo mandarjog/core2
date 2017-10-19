@@ -14,7 +14,7 @@
 
 // Package test supplies a fake Mixer server for use in testing. It should NOT
 // be used outside of testing contexts.
-package test // import "istio.io/mixer/test"
+package test // import "istio.io/core/test"
 
 import (
 	"errors"
@@ -28,8 +28,8 @@ import (
 	"google.golang.org/grpc/codes"
 
 	mixerpb "istio.io/api/mixer/v1"
-	"istio.io/mixer/pkg/attribute"
-	"istio.io/mixer/pkg/status"
+	"istio.io/core/pkg/attribute"
+	"istio.io/core/pkg/status"
 )
 
 // DefaultAmount is the default quota amount to use in testing (1).
