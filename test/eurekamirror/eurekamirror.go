@@ -42,8 +42,8 @@ import (
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/tools/cache"
 
-	"istio.io/pilot/model"
-	"istio.io/pilot/platform/kube"
+	"istio.io/core/pilot/model"
+	"istio.io/core/pilot/platform/kube"
 )
 
 var (

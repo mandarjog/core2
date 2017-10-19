@@ -34,10 +34,10 @@ import (
 	"k8s.io/client-go/kubernetes"
 
 	proxyconfig "istio.io/api/proxy/v1/config"
-	"istio.io/pilot/platform"
-	"istio.io/pilot/platform/kube"
-	"istio.io/pilot/platform/kube/inject"
-	"istio.io/pilot/test/util"
+	"istio.io/core/pilot/platform"
+	"istio.io/core/pilot/platform/kube"
+	"istio.io/core/pilot/platform/kube/inject"
+	"istio.io/core/pilot/test/util"
 )
 
 var (

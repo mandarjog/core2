@@ -5,9 +5,9 @@ go_library(
     srcs = ["client.go"],
     visibility = ["//visibility:private"],
     deps = [
-        "//test/grpcecho:go_default_library",
         "@com_github_golang_sync//errgroup:go_default_library",
         "@com_github_gorilla_websocket//:go_default_library",
+        "@io_istio_core//pilot/test/grpcecho:go_default_library",
         "@org_golang_google_grpc//:go_default_library",
         "@org_golang_google_grpc//credentials:go_default_library",
     ],

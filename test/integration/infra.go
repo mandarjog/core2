@@ -30,11 +30,11 @@ import (
 	meta_v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
 	proxyconfig "istio.io/api/proxy/v1/config"
-	"istio.io/pilot/adapter/config/crd"
-	"istio.io/pilot/model"
-	"istio.io/pilot/platform"
-	"istio.io/pilot/platform/kube/inject"
-	"istio.io/pilot/test/util"
+	"istio.io/core/pilot/adapter/config/crd"
+	"istio.io/core/pilot/model"
+	"istio.io/core/pilot/platform"
+	"istio.io/core/pilot/platform/kube/inject"
+	"istio.io/core/pilot/test/util"
 )
 
 const (
@@ -140,17 +140,9 @@ func (infra *infra) setup() error {
 	}
 	debugMode := infra.debugImagesAndMode
 	glog.Infof("mesh %s", spew.Sdump(mesh))
-
-	// Default to NamespaceAll to mirror kube-inject behavior. Only
-	// use a specific include namespace for the automatic injection.
-	includeNamespaces := []string{v1.NamespaceAll}
-	if infra.UseInitializer {
-		includeNamespaces = []string{infra.Namespace}
-	}
-
 	infra.InjectConfig = &inject.Config{
 		Policy:            inject.InjectionPolicyEnabled,
-		IncludeNamespaces: includeNamespaces,
+		IncludeNamespaces: []string{infra.Namespace, infra.IstioNamespace},
 		Params: inject.Params{
 			InitImage:       inject.InitImageName(infra.Hub, infra.Tag, debugMode),
 			ProxyImage:      inject.ProxyImageName(infra.Hub, infra.Tag, debugMode),

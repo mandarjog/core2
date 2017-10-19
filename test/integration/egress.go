@@ -23,7 +23,7 @@ import (
 	"k8s.io/api/core/v1"
 	meta_v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"istio.io/pilot/platform"
+	"istio.io/core/pilot/platform"
 )
 
 type egress struct {
